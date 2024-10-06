@@ -1,17 +1,16 @@
 "use client";
 
-import { useState } from "react";
-import HomeCard from "./HomeCard";
-import { useRouter } from "next/navigation";
-import { HomeCardsData } from "@/constants";
+import { useToast } from "@/hooks/use-toast";
 import { MeetingStateTypes } from "@/types";
-import MeetingModal from "./MeetingModal";
 import { useUser } from "@clerk/nextjs";
 import { Call, useStreamVideoClient } from "@stream-io/video-react-sdk";
-import { useToast } from "@/hooks/use-toast";
-import { Textarea } from "./ui/textarea";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import ReactDatePicker from "react-datepicker";
+import HomeCard from "./HomeCard";
+import MeetingModal from "./MeetingModal";
 import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
 
 const MeetingTypeList = () => {
   const { toast } = useToast();

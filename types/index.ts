@@ -40,3 +40,8 @@ export interface MeetingCardProps {
   handleClick: () => void;
   link: string;
 }
+
+export interface PermissionCardProps {
+  title: string;
+  iconUrl?: string;
+}

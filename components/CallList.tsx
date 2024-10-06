@@ -48,7 +48,6 @@ const CallList = ({ type }: { type: CallListPropsTypes }) => {
         const callData = await Promise.all(
           callRecordings?.map((meeting) => meeting.queryRecordings()) ?? []
         );
-        
 
         const recordings = callData
           .filter((call) => call.recordings.length > 0)
@@ -56,6 +55,8 @@ const CallList = ({ type }: { type: CallListPropsTypes }) => {
 
         setRecordings(recordings);
       } catch (error) {
+        console.log(error);
+
         toast({ title: "Try again later" });
       }
     };

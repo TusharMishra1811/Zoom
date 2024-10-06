@@ -62,6 +62,7 @@ const CallList = ({ type }: { type: CallListPropsTypes }) => {
     };
 
     if (type === "recordings") fetchRecordings();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [type, callRecordings]);
 
   const calls = getCalls();

@@ -18,7 +18,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "DHOOM ",
+  title: "YOOM ",
   description: "Video Calling App",
   icons: {
     icon: "/icons/logo.svg",
